@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content%}
+
+<h1 class="text-light">Customer Records:...</h1>
+
+<div class="card">
+    <div class="card-header">
+      {{ customer_record.first_name }}
+      {{ customer_record.last_name }}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ customer_record.email}}</h5>
+      <p class="card-text">{{ customer_record.phone }}</p>
+      <p class="card-text">{{ customer_record.address }}</p>
+      <p class="card-text">{{ customer_record.city }}</p>
+      <p class="card-text">{{ customer_record.state }}</p>
+      <p class="card-text">{{ customer_record.zipcode }}</p>
+      <p class="card-text">{{ customer_record.created_at }}</p>
+      <p class="card-text">{{ customer_record.id }}</p>
+    </div>
+    <a href="{% url 'website:home' %}" class="button btn-secondary">Back</a>
+    <a href="{% url 'website:delete_record' customer_record.id %}" class="button btn-secondary">Delete</a>
+    <a href="{% url 'website:update_record' customer_record.id %}" class="button btn-secondary">Update</a>
+  </div>
+
+{% endblock %}
