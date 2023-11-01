@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="" method="post" class="text-light">
+    {% csrf_token %}
+   <strong class="bg-light"> {{ form.as_p }}</strong>
+    <input type="submit" value="submit" name="submit">
+</form>
+
+{% endblock content %}
