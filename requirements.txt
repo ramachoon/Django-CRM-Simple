@@ -1,0 +1,4 @@
+django
+psycopg
+Pillow
+django-crispy-forms

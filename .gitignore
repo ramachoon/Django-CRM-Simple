@@ -1,0 +1,8 @@
+.env
+projects/__pycache__/*
+website/__pycache__/*
+useraccount/__pycache__/*
+website/migrations/*
+useraccount/migrations/*
+website/migrations/__pycache__/*
+useraccount/migrations/__pycache__/*
